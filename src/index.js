@@ -8,8 +8,6 @@ import reduxThunk from 'redux-thunk';
 
 import App from './components/App';
 
-// const store = createStore(() => [], {}, applyMiddleware());
-
 const createStoreWithMiddleware = applyMiddleware(reduxThunk)(createStore);
 const store = createStoreWithMiddleware(reducers);
 ReactDOM.render(
